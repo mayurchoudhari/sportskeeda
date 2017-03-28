@@ -1,0 +1,329 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'calibri';
+}
+#header {
+    width: 100%;
+    height: 120px;
+    /*background-color: red;*/
+}
+
+/*Logo, search, links*/
+#head {
+    height: 70px;
+}
+#head div:nth-child(1) {
+    width: 33.33%;
+    line-height: 70px;
+    font-size: 30px;
+    /*background-color: blue;*/
+    text-indent: 10%;
+    float: left;
+}
+#head div:nth-child(1) span:nth-child(1) {
+    font-weight: 700;
+}
+#head div:nth-child(1) span:nth-child(2) {
+    color: red;
+}
+#head div:nth-child(2) {
+    float: left;
+    width: 33.33%;
+    /*background-color: pink;*/
+}
+#head div:nth-child(2) ul {
+    list-style-type: none;
+    width: 50%;
+    margin: auto;
+}
+#head div:nth-child(2) ul li {
+    float: left;
+    margin: 0 2% 2% 2%;
+}
+#head div:nth-child(2) ul li a {
+    color: black;
+    font-size: 14px;
+}
+#head div:nth-child(3) {
+    width: 33.33%;
+    height: 70px;
+    float: left;
+}
+#head div:nth-child(3) input {
+    height: 30px;
+    font-size: 18px;
+    text-indent: 5%;
+    margin: 12px 0;
+    margin-left: 10%;
+    background-color: #efefef;
+    border: none;
+    outline: none;
+    float: left;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+#head div:nth-child(3) button {
+    height: 30px;
+    font-size: 18px;
+    margin: 12px 0;
+    padding-left: 1%;
+    padding-right: 1%;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+
+/*Navigation*/
+#navigation {
+    width: 100%;
+    height: 50px;
+    background-color: #efefef;
+}
+#nav {
+    width: 100%;
+}
+#nav ul {
+    width: 45%;
+    margin: auto;
+}
+#nav ul li {
+    float: left;
+    /*width: 10%;*/
+    margin-top: 10px;
+    margin-left: 2%;
+    margin-right: 2%;
+    padding: 0 5px;
+    list-style-type: none;
+    /*background-color: red;*/
+    border-radius: 5px;
+    font-size: 18px;
+    line-height: 30px;
+}
+#nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500px;
+}
+#nav ul li:hover {
+    background-color: #c1c1c1;
+}
+#nav ul li:hover a {
+    color: white;
+}
+
+/*Carousal*/
+#carousal {
+    width: 100%;
+    height: 528px;
+    overflow: hidden;
+}
+#carousal #images {
+    width: 400%;
+    height: 528px;
+    animation-name: carousal;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-delay: 3s;
+}
+#carousal #images div {
+    width: 25%;
+    height: 528px;
+    float: left;
+}
+@keyframes carousal {
+    33% {
+        margin-left: -100%;
+    }
+    66% {
+        margin-left: -200%;
+    }
+    100% {
+        margin-left: -300%;
+    }
+}
+#carousal #images div h1 {
+    position: relative;
+    left: 10%;
+    top: -428px;
+    color: #efefef;
+    font-size: 50px;
+}
+#carousal #images div p {
+    position: relative;
+    width: 50%;
+    left: 10%;
+    top: -428px;
+    color: #efefef;
+    font-size: 20px;
+}
+
+/*Products*/
+#products {
+    width: 100%;
+    height: auto;
+    margin-bottom: 50px;
+}
+#products h1 {
+    width: 100%;
+    text-align: center;
+    line-height: 60px;
+    margin-top: 20px;
+    font-size: 40px;
+    color: #9c9c9c;
+}
+#products #items {
+    width: 80%;
+    height: 300px;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+#products #items div {
+    float: left;
+    width: 25%;
+}
+#products #items div img {
+    width: 100%;
+    height: 300px;
+}
+#products #items div div {
+    float: left;
+    width: 100%;
+}
+#products #items div div h3 {
+    margin-left: 10%;
+    font-size: 23px;
+}
+#products #items div div span {
+    margin-left: 10%;
+    font-size: 18px;
+}
+#products #items div div button {
+    font-size: 18px;
+    padding: 8px;
+    margin-left: 30%;
+    border: none;
+    border-radius: 5px;
+}
+#products #items div div button:hover {
+    cursor: pointer;
+    background-color: #eb5368;
+    color: white;
+}
+
+/*Partners*/
+#partners {
+    margin-top: 100px;
+    width: 100%;
+    height: 208px;
+    background-color: #dedede;
+}
+#partners h1 {
+    width: 100%;
+    text-align: center;
+    background-color: white;
+    line-height: 60px;
+    margin-top: 20px;
+    font-size: 40px;
+    color: #9c9c9c;
+}
+#partners #brands {
+    height: 128px;
+    width: 253px;
+    margin: auto;
+    overflow: hidden;
+}
+#partners #brands #brand-animate {
+    height: 896px;
+    animation-name: partners;
+    animation-duration: 24s;
+    animation-delay: 4s;
+    animation-iteration-count: infinite;
+}
+@keyframes partners {
+    16.67%{margin-top: -128px;}
+    33.34%{margin-top: -256px;}
+    50.01%{margin-top: -384px;}
+    66.68%{margin-top: -512px;}
+    83.35%{margin-top: -640px;}
+    100%{margin-top: -768px;}
+}
+#partners #brands #brand-animate div {
+    height: 128px;
+}
+
+#footer {
+    margin-top: 50px;
+    width: 100%;
+    height: 150px;
+    background-color: black;
+    color: white;
+}
+#footer li {
+    /*margin-left: 50px;*/
+    list-style-type: none;
+    height: 30px;
+    margin-top: 5px;
+}
+#footer li a {
+    color: white;
+    text-decoration: none;
+}
+#footer li a:hover {
+    color: #eb5368;
+}
+#social {
+    text-align: center;
+    float: left;
+    width: 50%;
+}
+#social li {
+    text-align: left;
+    margin-left: 40%;
+}
+#quick-links {
+    float: left;
+    width: 30%;
+}
+#quick-links h3 {
+    width: 100%;
+    text-align: center;
+}
+#quick-links li {
+    margin-left: 50%;
+}
+#copy {
+    /*float: right;*/
+    position: absolute;
+    margin-top: 130px;
+    width: 100%;
+    text-align: center;
+}
+
+
+/*To Top*/
+#top {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+}
+
+@media (max-width:768px){
+    #header {
+        width: 100%;
+        height: 30px;
+        background-color: red;
+    }
+    #head div:nth-child(1) {
+        width: 30%;
+        line-height: 30px;
+        font-size: 10px;
+        background-color: blue;
+        text-indent: 10%;
+    }
+}
